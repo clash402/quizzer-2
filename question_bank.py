@@ -5,7 +5,7 @@ class QuestionBank:
 
     # PUBLIC METHODS
     def generate(self):
-        trivia = self.data_manager.get_trivia()
+        trivia = self.data_manager.get_trivia(10)
         question_bank = []
 
         for item in trivia:

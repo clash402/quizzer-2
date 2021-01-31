@@ -7,7 +7,7 @@ from ui import UI
 
 class App:
     def __init__(self):
-        question_bank = QuestionBank(DataManager(10), Question).generate()
+        question_bank = QuestionBank(DataManager(), Question).generate()
         quiz = Quiz(question_bank)
 
         self.ui = UI(quiz)
